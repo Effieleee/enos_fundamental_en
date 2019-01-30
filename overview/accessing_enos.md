@@ -6,14 +6,13 @@ All functions of the EnOS Cloud are exposed as service APIs. Some of the functio
 
 EnOS provides APIs for developers to add, delete, modify, and retrieve resources such as users, assets, and applications, to facilitate development of applications. EnOS adopts a variety of authentication and authorization techniques to ensure secure access to the APIs.
 
-To access the EnOS APIs, you'll need to register the application that will invoke the APIs on EnOS. The application can then access the APIs by presenting its application key and secret to be authenticated and authorized. For more information, see [Getting started with EnOS APIs](https://www.envisioniot.com/docs/app-development/en/latest/enos_apis/getting_started_enos_apis.html) in the *Application Development* manual.
+To access the EnOS APIs, you'll need to register the application that will invoke the APIs on EnOS. The application can then access the APIs by presenting its application key and secret to be authenticated and authorized. For more information, see [Getting started with EnOS APIs](https://www.envisioniot.com/docs/app-development/en/1.0/enos_apis/getting_started_enos_apis.html) in the *Application Development* manual.
 
 ## EnOS Console
 
 EnOS Console is a web-based graphic interface for you to interact with resources in the EnOS. The following figure shows a configuration interface in the EnOS Console.
 
 .. image:: media/enos_console.png
-   :alt: Figure: EnOS console
 
 The user interface is mainly comprised of 3 parts:
 
@@ -25,4 +24,4 @@ The user interface is mainly comprised of 3 parts:
 
 .. |menu| image:: media/menu.png
 
-<!--end-->
+<!--emd-->

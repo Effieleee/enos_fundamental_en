@@ -194,7 +194,7 @@ A service is a capability or method by which a device can be called externally. 
 
 ### service account
 
-A service account is the account that EnOS assigns to an application or service. The service account uniquely identifies an application. The service account is required when calling EnOS APIs to access the EnOS resources and when accessing subscribed asset data through EnOS SDK.
+A service account is the account that EnOS assigns to an application or service. The service account uniquely identifies an application. The account is required to call EnOS APIs through the service account to access the EnOS resources.
 
 ### site
 
@@ -214,7 +214,7 @@ A sub device is a physical device that is subordinate to a product. A sub device
 
 ### subscribe
 
-Subscribe is a type of operation permission for Topics, with permission to acquire messages from Topic queues. EnOS data subscription service supports subscription to real-time asset data and asset alert data, thus improving the API calling efficiency of applications with active data push.
+Subscribe is a type of operation permission for Topics, with permission to acquire messages from Topic queues.
 
 ### system resources
 
@@ -243,7 +243,7 @@ Time series data refers to data generated and recorded in time series. For insta
 
 ### topic
 
-In the data subscription service, a topic is the theme of messages. A topic is transmitted through a message queue, and users can publish or subscribe to messages of the corresponding topic to the queue.
+In the publish/subscribe model, a topic is the theme of messages. A topic is transmitted through a message queue, and users can publish or subscribe to messages of the corresponding topic to the queue.
 
 ### topic type
 

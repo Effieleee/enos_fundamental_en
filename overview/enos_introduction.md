@@ -1,28 +1,15 @@
 # EnOS Overview
 
-EnOS™ is an intelligent IoT operating system for enterprises and cities to accelerate digital transformation and ecosystem development. EnOS builds on top of open standards and best design to ensure it operates in an open eco-system.
-
-EnOS consists of the cloud side and edge side as shown in the following figure.
-
-.. image:: media/architecture.png
-
-## EnOS Cloud
-
-EnOS Cloud provides fundamental capabilities of model-based device asset management, data acquisition, stream data processing, batch data processing, custom event triggering and time-sequence data query service. For the services and functions that EnOS Cloud provides, see [Service and Function Overview](services_overview).
-
-EnOS Cloud supports native EnOS Edge. If a 3rd party edge is required, EnOS Cloud also supports 3rd party edges that are compatible with the EnOS device connection framework.
-
-## EnOS Edge
-
-EnOS Edge provides capabilities of device data acquisition, device controlling, data normalization, and model-based real-time computing. The data communication channels between EnOS Edge and EnOS Cloud are secured by TLS/SSL protocol with dedicated X.509 certificate for each edge device and EnOS Cloud access point. For more information, see [EnOS Edge](https://www.envisioniot.com/docs/enos-edge/en/latest/edge_overview.html).
-
-## Major Advantages
+Envision EnOS is an IoT operating system that builds on top of open standards and best design to ensure it operates in an open eco-system. EnOS provides comprehensive features and services to cater to different use-case scenarios.
 
 **Extensive connectivity**
 
 Simplified ubiquitous connectivity based on rich protocol library.
+
 - EnOS supports direct device connections through the MQTT protocol and connections through the EnOS Edge or third-party edge products according to your business needs.
 - EnOS Edge supports a rich set of industry-standard protocols and some private protocols of mainstream IoT vendors. EnOS also provides toolsets to help you develop your own protocol.
+
+For more information, see [Device connection](https://www.envisioniot.com/docs/device-connection/en/1.0/deviceconnection_overview.html).
 
 **Deployment flexibility**
 
@@ -30,16 +17,15 @@ Enterprise-grade software stack with flexible deployment options (public, privat
 
 EnOS can operate in private cloud and public cloud hosting environment to enable clients to develop, run and operate their applications without handling the complexity of managing software stacks.
 
-EnOS can also be deployed in virtual private cloud (VPC) on public cloud hosting environment and private cloud without dependency on underlying hypervisors. You can also deploy the solution that best suits your requirements for cost, control, configurability, scalability, location and security.
-
-EnOS is compatible with most popular IaaS vendors such as Amazon AWS and Microsoft Azure. In order to keep the best compatibility, Public EnOS clusters only depends on the virtual machines and NFS services from selected IaaS providers. Many major components of EnOS IoT Core are built with state-of-the-art open source software. They are well supported by common OS environment running on virtual machines. EnOS cloud integrates with the management API of IaaS, making it possible to adjust the scale of an existing cluster or create new clusters in automation.
+EnOS can also be deployed in virtual private cloud (VPC) on public cloud hosting environment and private cloud without dependency on underlying hypervisors. you can also deploy the solution that best suits your requirements for cost, control, configurability, scalability, location and security.
 
 
 **Domain expertise**
 
 Domain driven data architecture promised by rich experience with smart energy devices and scenarios.
 
-Through extensive domain metadata, EnOS supports standardized data acquisition policies, ingestion rules, event handling rules, data retention policies, ODS schema, access control policies and data quality policies. With configurable metadata mapping from the data source to the data target, this process will significantly reduce the effort required for data cleansing and normalization.
+Through extensive domain metadata, EnOS supports standardized data acquisition policies, ingestion rules, event handling rules, data retention policies, ODS schema, access control policies and data quality policies cross layer 3 to 5 in the 7-layer reference architecture, as illustrated in Figure 7.
+With configurable metadata mapping from the data source to the data target, this process will significantly reduce the effort required for data cleansing and normalization.
 
 **Eco-system**
 
@@ -48,3 +34,27 @@ Seamless integration with native and third-party applications, end-to-end toolin
 EnOS allows users such as IoT engineers, data scientists, application developers, to perform operations such as managing devices and models, exploring data ingested from devices, configuring event triggering policies, rendering data analysis reports, and managing applications that are developed through the EnOS toolsets.
 
 <!--Need to add description about the end user, system admins and application users-->
+
+
+## Major components
+
+EnOS consists of the cloud side and edge side as shown in the following figure.
+
+.. image:: media/architecture.png
+
+### EnOS Cloud
+
+EnOS Cloud provides fundamental capabilities of model-based device asset
+management, data acquisition, stream data processing, batch data processing,
+custom event triggering and time-sequence data query service.
+
+EnOS Cloud supports native EnOS Edge. If a 3rd party edge is required, EnOS
+Cloud also supports 3rd party edges that are compatible with the EnOS device
+connection framework.
+
+### EnOS Edge
+
+EnOS Edge provides capabilities of device data acquisition, device controlling,
+data normalization, and model-based real-time computing. The data communication
+channels between EnOS Edge and EnOS Cloud are secured by TLS/SSL protocol with
+dedicated X.509 certificate for each edge device and EnOS Cloud access point.
